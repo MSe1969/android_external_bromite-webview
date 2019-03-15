@@ -45,6 +45,7 @@
 #$(call add-clean-step, rm -rf $(PRODUCT_OUT)/data/*)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib/libwebviewchromium.so)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib64/libwebviewchromium.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/bromite-webview)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/webview)
 
 # ******************************************************************
