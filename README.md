@@ -13,3 +13,7 @@ respective pages listed above for more information and the respective Copyright 
 - Specify `PRODUCT_PACKAGES += bromite-webview` in a 'product' .mk file (**not** in an Android.mk file)
 - An 'elegant' way to do so without having to fork and track any specific device or vendor repository is to simply create an own product.mk file in directory vendor/extras (or to add the above statement into an existing one)
 - It is not necessary to remove the default webview repo from the build tree
+- **Take note about the next section !**
+
+## Important info about the package name
+As of release v97, Bromite Webview uses an [own package name 'org.bromite.webview'](https://www.bromite.org/news/2022-02-05-bromite-webview-package-name-change). This means, that you need to add it as webview provider to the configuration in your build tree. You can do so by overlaying the standard settings as shown in [this commit](https://github.com/lin18-microG/android_vendor_lineage/commit/56d45e0881ffbdcae8394835adbe160f23d6418a) (recommended approach) or by patching the respective configuration file in the frameworks/base repository directly. **Missing this step will prevent the webview functionality from being used in your build!**
