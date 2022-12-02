@@ -27,8 +27,8 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MULTILIB := both
 LOCAL_CERTIFICATE := PRESIGNED
 
-# Only move to /product, if Android 10 or above)
-ifneq ( ,$(filter android-24 android-25 android-26 android-27 android-28 android-29, $(TARGET_PLATFORM)))
+# Only move to /product, if Android 11 or above)
+ifeq ( ,$(filter 24 25 26 27 28 29, $(PLATFORM_SDK_VERSION)))
 LOCAL_PRODUCT_MODULE := true
 endif
 
