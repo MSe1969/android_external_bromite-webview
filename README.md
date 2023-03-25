@@ -1,6 +1,8 @@
 # android_external_bromite-webview
 Prebuilt Android System Webview from www.bromite.org
 
+***Please note: It seems that the Bromite project isn't active any longer***
+
 Replaces the default Android System Webview with the 'Bromite' SystemWebView component in Custom ROM builds
 
 ## Credits
